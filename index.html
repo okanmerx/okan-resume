@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okan - Full-Stack Developer & QA Specialist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Use Inter font for a clean look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Center the loader on the page */
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+            /* A light grey background */
+        }
+
+        /* The loader element */
+        .google-loader {
+            /* Set the size of the loader */
+            width: 75px;
+            height: 75px;
+
+            /* Make it a circle */
+            border-radius: 50%;
+
+            /* Create the ring effect using a thick border. */
+            border: 10px solid transparent;
+
+            /* Set the color for each quadrant of the border. */
+            border-top-color: #4285F4;
+            /* Blue */
+            border-right-color: #EA4335;
+            /* Red */
+            border-bottom-color: #FBBC05;
+            /* Yellow */
+            border-left-color: #34A853;
+            /* Green */
+
+            /* Apply the spin animation */
+            animation: spin 1s linear infinite;
+
+            /* Add a subtle shadow for depth */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+            /* --- New styles to center the 'G' --- */
+            /* Use flexbox to center the child span */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* --- New style for the 'G' --- */
+        .google-loader span {
+            /* Set the font size and weight */
+            font-size: 36px;
+            font-weight: 500;
+            /* Use Google's blue color */
+            color: #4285F4;
+
+            /* Apply the counter-spin animation */
+            animation: counter-spin 1s linear infinite;
+        }
+
+
+        /* Define the spin animation */
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* --- New keyframes for the counter-spin --- */
+        /* This animation rotates in the opposite direction
+           to keep the 'G' upright.
+        */
+        @keyframes counter-spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== Navigation Bar ===== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#hero" class="logo">Okan Mersinlioglu, PhD</a>
+            <ul class="nav-links">
+                <li><a data-target="#hero">Home</a></li>
+                <li><a data-target="#about">About Me</a></li>
+                <li><a data-target="#skills">Skills</a></li>
+                <li><a data-target="#experience">Experience</a></li>
+                <li><a data-target="#projects">Projects</a></li>
+                <li><a data-target="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="book">
+        <!-- ===== Hero Section ===== -->
+        <header id="hero" class="page">
+            <div class="hero-content">
+                <!-- ADD YOUR INFO HERE -->
+                 <img src="/Okan-Gemini_Generated_Image.png" alt="Profile Picture" class="about-image">
+                <h1>Okan Mersinlioglu, PhD</h1>
+                <p class="subtitle">Full-Stack Developer & Sr. QA Specialist</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </header>
+
+        <!-- ===== About Section (GREEN) ===== -->
+        <section id="about" class="page">
+            <div class="section-title-container">
+                <h2>About Me</h2>
+            </div>
+            <div class="container">
+                <img src="/Okan-Gemini_Generated_Image.png" alt="Profile Picture" class="about-image">
+                <div class="about-text">
+                    <p style="text-align: center;">
+                        <b>Full-Stack Developer</b>, <b>Sr. QA Specialist</b> & <b> Project Lead</b>
+                    </p>
+                    <p style="text-align: justify;"> <br> Driving Quality with a Global Perspective
+                        With a career spanning numerous esteemed multinational companies across Europe and America, I
+                        have built a robust foundation as a Senior Software QA Engineer and Project Lead. My track
+                        record is defined by the flawless, on-time, and high-quality delivery of significant projects.
+                        In leadership roles, I have guided valuable initiatives, providing organizations with the high
+                        degree of confidence needed to navigate critical decision-making processes and ensure successful
+                        outcomes. </p>
+                    <p style="text-align: center;">
+                        <b>Commitment to Continuous Growth</b>
+                        <br>
+                    </p>
+
+                    <p style="text-align: justify;"> My dedication to excellence is fueled by a passion for
+                        lifelong learning. I continually advance my expertise through a comprehensive academic
+                        background, including a PhD, Master's, and Bachelor's degree in engineering. To stay at the
+                        forefront of technology, I supplement my formal education with modern certifications in
+                        high-demand areas like Full-stack Development and React Native App creation. This continuous
+                        development ensures my skills remain sharp and relevant in a rapidly evolving industry.
+
+                    <p style="text-align: center;"><b>A World of Experience</b></p>
+
+                    </p>
+                    <p style="text-align: justify;">
+                        Beyond my technical skills, I bring a unique global perspective shaped by exploring over 50
+                        countries across Europe, Asia, and America. This immersion in diverse cultures has been
+                        instrumental in honing my soft skills. It has sharpened my ability to overcome complex
+                        challenges under pressure, make swift and effective decisions, and instantly apply new knowledge
+                        to solve difficult problems. It is this powerful blend of deep technical skill, proven
+                        leadership, and a broad worldview that empowers me to consistently deliver success.
+
+                    <p style="text-align: center;"><b>Personal Achievements</b></p>
+                    </p>
+                    <p style="text-align: justify;">
+
+                        <i>Judo:</i> In a Judo career spanning over 10 years, I have won more than 15 medals and
+                        certificates
+                        of achievement at the national level, including first, second, and third-place finishes. <br>
+                        <br>
+
+                        <i>Academic Achievements & Scholarships:</i> I was awarded Spain's prestigious FPI (Personal
+                        Investigador Predoctoral) scholarship, enabling me to conduct scientific research for 5 years at
+                        the Complutense University of Madrid and successfully complete my PhD. I also studied at the
+                        University of Huelva in Spain through the Erasmus Student Exchange Program. <br> <br>
+
+                        <i>International Experience:</i> I broadened my academic experience as a visiting researcher at
+                        the
+                        University of Duisburg-Essen in Germany. My scientific articles have been published in
+                        international peer-reviewed journals, and I have presented my work at major conferences. <br>
+                        <br>
+
+                        <i>Community Contribution & Leadership:</i> I took an active role as a volunteer trainer in
+                        national
+                        projects organized by the European Union, delivering educational sessions to numerous high
+                        school students. For 5 years, I participated in national scouting activities, developing
+                        leadership and endurance skills in challenging outdoor environments. <br /> <br>
+
+                        <i> US Citizen
+
+                            EU Work & Residence Permission </i>
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Skills Section (ORANGE) ===== -->
+        <section id="skills" class="page">
+            <div class="section-title-container">
+                <h2>My Skills</h2>
+            </div>
+            <div class="container">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>React JS</li>
+                            <li>Next.js</li>
+                            <li>Router & Hooks</li>
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React & Next.js</li>
+                            <li>Vue.js</li>
+                            <li>Tailwind CSS</li>
+                            <li>React Bootstrap</li>
+                            <li>Redux / Redux Toolkit</li>
+                            <li>Material UI</li>
+                            <li>Typescript</li>
+                            <li>Rest API Usage</li>
+                            <li>SASS </li>
+
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js & Express.js</li>
+                            <li>Next.js (React framework)</li>
+                            <li>RESTful APIs</li>
+                            <li>Java (Spring Boot)</li>
+                            <li>REST & GraphQL APIs</li>
+                            <li>PostgreSQL, MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>QA & Testing</h3>
+                        <ul>
+                            <li>Manual & Automated Testing</li>
+                            <li>Cypress & Playwright</li>
+                            <li>Selenium WebDriver</li>
+                            <li>Jest & Vitest</li>
+                            <li>Jira & TestRail</li>
+                            <li>Postman & Newman</li>
+                            <li>CI/CD Pipelines</li>
+                            <li>Performance Testing</li>
+                            <li>API Testing</li>
+                            <li>Test Automation Frameworks</li>
+                            <li>Version Control (Git)</li>
+                            <li>Agile & Scrum Methodologies</li>
+                            <li>TestTracker</li>
+                            <li>Buganizer</li>
+                            <li>Sherlog</li>
+                            <li>Radar</li>
+                            <li>Stage & Production Environments</li>
+                            <li>Web, Device and Apps testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== Experience Section (TEAL/CYAN) - ADDED ===== -->
+        <section id="experience" class="page">
+            <div class="section-title-container">
+                <h2>Work Experience</h2>
+            </div>
+            <div class="container">
+                <div class="experience-timeline">
+
+                    <!-- ADD YOUR EXPERIENCE ITEMS HERE -->
+                    <div class="experience-item">
+                        <span class="experience-date">12/2024 - Present</span>
+                        <h3 class="experience-title"> <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                    fill="#4285F4"></path>
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                    fill="#34A853"></path>
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"
+                                    fill="#FBBC05"></path>
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                    fill="#EA4335"></path>
+                            </svg> Software Engineer </h3>
+                        <div class="experience-company">Immersive Lab at Google Inc || Scalence in Mountain View,
+                            California, United States</div>
+                        <ul class="experience-desc">
+                            <li>Lead development of high-traffic web applications using React, Node.js, and PostgreSQL.
+                            </li>
+                            <li>Created test plans and cases for XR/AR/VR applications, automated test scripts, and
+                                collaborated with test engineering team to improve product quality.</li>
+                            <li>Collaborate with QA teams to design and implement end-to-end testing strategies with
+                                Cypress.</li>
+                            <li>Worked on immersive and android apps for Android XR platform at Google Immersive
+                                Laboratory.</li>
+                            <li>Led daily meetings and triaged bugs, demonstrating excellent analytical and
+                                communication skills.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <span class="experience-date">02/2023 - Present</span>
+                        <h3 class="experience-title"> <i class="fa fa-apple"></i> Software Engineer </h3>
+                        <div class="experience-company">Apple Inc. || Hogarth WW | Part-time, Freelancer & Remote</div>
+                        <ul class="experience-desc">
+                            <li>Fullstack engineering on Web & apps testing using HTML, CSS, JS, Typescripts, Node JS,
+                                React and more.</li>
+                            <li>Performed mobile app across Android, IOS & Web</li>
+                            <li>Created and ran test cases through internal test tool</li>
+                            <li>Wrote concise and descriptive bug reports, presented test results to other project
+                                stakeholders clearly and effectively</li>
+                            <li>Manually executed, designed and reported test case, and test plan across multiple
+                                platforms by using internal private and secure testing tools</li>
+                            <li>Checked overlapping, design of descriptions and images web pages, functionality on the
+                                web pages and/or app, successfully avoided bugs and solved defects</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <span class="experience-date">05/2024 - 12/2024</span>
+                        <h3 class="experience-title"> <i class="fa fa-facebook-f" style="font-size:24px"></i> Software
+                            Engineer</h3>
+                        <div class="experience-company">Meta Platforms, Inc. | Burlingame, California, United States
+                        </div>
+                        <ul class="experience-desc">
+                            <li>Assisted in developing and maintaining client websites using HTML, CSS, JavaScript, and
+                                PHP.</li>
+                            <li>Gained foundational experience in both front-end and back-end development.</li>
+                            <li>Software Developer in Medical Devices</li>
+                            <li>Developed and maintained code for client websites primarily using HTML, CSS, Sass,
+                                JavaScript, and React JS</li>
+                            <li>Implemented responsive design to ensure compatibility across various devices and
+                                browsers by working Redux, Node JS, SASS, Styled Components, React JS.</li>
+                            <li>Collaborated with designers to implement clean interfaces and simple, intuitive
+                                interactions and experiences and working using Figma document testing via Jest/Cypress.
+                            </li>
+                            <li> Worked with back-end developers to integrate front-end components with RESTful APIs,
+                                Mongo DB and more.</li>
+                            <li>Conducted code reviews and provided constructive feedback to improve overall code
+                                quality</li>
+                            ● Optimized web applications for maximum speed and scalability
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <span class="experience-date">02/2021 - 02/2024</span>
+                        <h3 class="experience-title"> <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                    fill="#4285F4"></path>
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                    fill="#34A853"></path>
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"
+                                    fill="#FBBC05"></path>
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                    fill="#EA4335"></path>
+                            </svg> Software Engineer </h3>
+
+                        <div class="experience-company">YouTube & Google Assistant at Google Inc || Accenture Flex and
+                            Tech Mahindra in Mountain View,
+                            California, United States</div>
+                        <ul class="experience-desc">
+                            <li> Assisted in developing web applications using React frameworks,Created reusable
+                                components and front-end libraries and Figma using for future use, HTML, CSS, and
+                                JavaScript, SASS, React and more.</li>
+                            <li>Participated in daily stand-ups and sprint planning sessions using Agile methodologies
+                            </li>
+                            <li> Providing maximum quality on functionality on devices and web design and mobile apps
+                            </li>
+                            <li> Find bugs and apply engineering rigor to reproduce and diagnose those bugs </li>
+                            <li> Troubleshoot bugs filed to reproduce issues, verify steps to reproduce and prioritize
+                                for fixes</li>
+                            <li> Report on backlog and progress made daily / weekly</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <span class="experience-date">10/2021 - 02/2022</span>
+                        <h3 class="experience-title"> <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Warner_Bros._logo_2023.svg/500px-Warner_Bros._logo_2023.svg.png"
+                                alt="Warner Bros. logo" style="width:40px;height:auto;"></i> Software
+                            Engineer</h3>
+                        <div class="experience-company">Warner Bros, Inc. || The Sherlock Company || Remote during
+                            Covid-19, California, United States
+                        </div>
+                        <ul class="experience-desc">
+                            <li>Assisted in developing and maintaining client websites using HTML, CSS, JavaScript, and
+                                PHP.</li>
+                            <li>Gained foundational experience in both front-end and back-end development.</li>
+                            <li>Software Developer in Medical Devices</li>
+                            <li>Developed and maintained code for client websites primarily using HTML, CSS, Sass,
+                                JavaScript, and React JS</li>
+                            <li>Implemented responsive design to ensure compatibility across various devices and
+                                browsers by working Redux, Node JS, SASS, Styled Components, React JS.</li>
+                            <li>Collaborated with designers to implement clean interfaces and simple, intuitive
+                                interactions and experiences and working using Figma document testing via Jest/Cypress.
+                            </li>
+                            <li> Worked with back-end developers to integrate front-end components with RESTful APIs,
+                                Mongo DB and more.</li>
+                            <li>Conducted code reviews and provided constructive feedback to improve overall code
+                                quality</li>
+                            ● Optimized web applications for maximum speed and scalability
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== Projects Section (PINK) ===== -->
+        <!-- <section id="projects" class="page">
+            <div class="section-title-container">
+                <h2>Work Experience and Projects</h2>
+            </div>
+            <div class="container">
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/e83e8c/ffffff?text=Project+1" alt="Project 1"
+                            class="project-image">
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Cypress</span>
+                            </div>
+                            <h3>E-Commerce Platform</h3>
+                            <p>A full-featured e-commerce site where users can list products, add them to the cart, and
+                                place orders. Both backend and frontend were developed, and end-to-end tests were
+                                written.</p>
+                            <div class="project-links">
+                                <a href="#" target="_blank">Live Demo</a>
+                                <a href="#" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/007bff/ffffff?text=Project+2" alt="Project 2"
+                            class="project-image">
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Django</span>
+                                <span>Selenium</span>
+                            </div>
+                            <h3>Task Management App</h3>
+                            <p>A web application that allows teams to create tasks, make assignments, and track
+                                progress. User flows were secured with automated test scenarios.</p>
+                            <div class="project-links">
+                                <a href="#" target="_blank">Live Demo</a>
+                                <a href="#" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/6f42c1/ffffff?text=Project+3" alt="Project 3"
+                            class="project-image">
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span>Vue.js</span>
+                                <span>Firebase</span>
+                                <span>Jest</span>
+                            </div>
+                            <h3>Real-Time Chat App</h3>
+                            <p>A chat application developed with a serverless architecture, allowing users to message in
+                                real-time. The stability of the interface was ensured with component tests.</p>
+                            <div class="project-links">
+                                <a href="#" target="_blank">Live Demo</a>
+                                <a href="#" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- ===== Contact Section (PURPLE) ===== -->
+        <section id="contact" class="page">
+            <div class="section-title-container">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="container">
+
+                <p class="contact-text">
+                    I'm always open to discussing new opportunities and projects. You can reach out to me via email or
+                    connect with me on social media.
+                </p>
+                <a href="mailto:okanmerx@gmail.com" class="btn">Send an Email</a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/okan-mersinlioglu-phd-3baa15101/" target="_blank"
+                        title="LinkedIn">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/okanmerx" target="_blank" title="GitHub">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://docs.google.com/document/d/1mUkaFyCCW36_Ucd7k_249vgZsDp4KbC7/edit?usp=sharing&ouid=112069492599014415096&rtpof=true&sd=true"
+                        target="_blank" title="Resume">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM6 20V4h7v5h5v11H6z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:okanmerx@gmail.com" title="Email">
+        <svg viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+    </a>
+                </div>
+                <!-- ===== Footer ===== -->
+                <footer class="footer">
+                    <div class="container">
+                        <p>&copy; 2025 Okan Mersinlioglu. All Rights Reserved.</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
